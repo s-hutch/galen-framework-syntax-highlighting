@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gspec</string>
+		<string>test</string>
+	</array>
+	<key>name</key>
+	<string>Galen</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>comments</string>
+			<key>match</key>
+			<string>\#.+</string>
+			<key>name</key>
+			<string>comment.line.number-sign.galen</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>tags</string>
+			<key>match</key>
+			<string>\@\w+</string>
+			<key>name</key>
+			<string>entity.name.tag</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>variable</string>
+			<key>match</key>
+			<string>\$\{\w+\}</string>
+			<key>name</key>
+			<string>variable.parameter</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.galen</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Specs</string>
+			<key>match</key>
+			<string>\b(near|below|above|inside( partly)?|width|height|aligned( horizontally(?! (left|right))| vertically(?! (top| bottom))) (all|centered|top|bottom|left|right)|text (is|contains|starts|ends|matches)|css .* (is|starts|ends|contains|matches)|centered (horizontally|vertically|all) (inside|on)|absent|visible|contains( partly)?|on (top|bottom) (left|right)|component|color scheme|image)</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>section header</string>
+			<key>match</key>
+			<string>=(.*?)=</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>locator type</string>
+			<key>match</key>
+			<string>\b(css|id|xpath)\b</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.galen</string>
+	<key>uuid</key>
+	<string>e31cd3bf-1560-42dc-bf84-36c77835e311</string>
+</dict>
+</plist>
