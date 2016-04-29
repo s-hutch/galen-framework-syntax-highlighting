@@ -1,6 +1,6 @@
 # Galen Syntax Highlighting for Sublime Text
 
-Basic syntax highlighting for v2.x.x of the Galen Framework for Sublime Text.
+Basic syntax highlighting for v2.x.x of the [Galen Framework](http://galenframework.com/) for Sublime Text.
 
 ## Installation
 
