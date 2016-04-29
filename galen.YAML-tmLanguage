@@ -1,0 +1,33 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Galen
+scopeName: source.galen
+fileTypes: [gspec,test]
+uuid: e31cd3bf-1560-42dc-bf84-36c77835e311
+
+patterns:
+- match: \#.+
+  name: comment.line.number-sign.galen
+  comment: comments
+
+- match: \@\w+
+  name: entity.name.tag
+  comment: tags
+
+- match: \$\{\w+\}
+  name: variable.parameter
+  comment: variable
+
+- match: \b(near|below|above|inside( partly)?|width|height|aligned( horizontally(?! (left|right))| vertically(?! (top| bottom))) (all|centered|top|bottom|left|right)|text (is|contains|starts|ends|matches)|css .* (is|starts|ends|contains|matches)|centered (horizontally|vertically|all) (inside|on)|absent|visible|contains( partly)?|on (top|bottom) (left|right)|component|color scheme|image)
+  captures: 
+        '1': { name: support.function.galen }
+  comment: Specs
+
+- name: support.function
+  match: =(.*?)=
+  comment: section header
+
+- name: support.function
+  match: \b(css|id|xpath)\b
+  comment: locator type
+...
