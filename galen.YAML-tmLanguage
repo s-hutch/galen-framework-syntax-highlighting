@@ -10,7 +10,7 @@ patterns:
   name: comment.line.number-sign.galen
   comment: comments
 
-- match: \@\w+
+- match: (\@\w+\s\w+.\s\w+)|(\@\w+\s\w+)|(\@\w+)
   name: entity.name.tag
   comment: tags
 
