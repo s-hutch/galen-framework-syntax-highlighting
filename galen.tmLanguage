@@ -23,7 +23,7 @@
 			<key>comment</key>
 			<string>tags</string>
 			<key>match</key>
-			<string>\@\w+</string>
+			<string>(\@\w+\s\w+.\s\w+)|(\@\w+\s\w+)|(\@\w+)</string>
 			<key>name</key>
 			<string>entity.name.tag</string>
 		</dict>
