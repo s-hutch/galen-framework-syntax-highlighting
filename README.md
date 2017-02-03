@@ -14,8 +14,8 @@ To install manually:
 
 1. Click the Preferences > Browse Packages… menu
 2. Browse up a folder and then into the Installed Packages/ folder
-3. Download the zip archive, rename it to Galen.sublime-package and copy it into the Installed Packages/ directory
-4. Restart Sublime Text
+3. Download the zip archive, extract the zip and rename it to Galen.sublime-package and copy it into the Packages/User directory
+4. Optional step if galen doesn't show in the list of languages in the bottom right, restart Sublime Text.
 
 ## Usage
 
